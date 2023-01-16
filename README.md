@@ -26,9 +26,13 @@ to be trained. On the other hand, the text is trained using model B. Then featur
 ![Picture1](https://user-images.githubusercontent.com/98291003/212764180-f777dfcd-cf8b-40ef-bc9f-d4d789506f06.png)
 
 2-GROUP 2: Similar to GROUP 1 all numerical datasets are fused at the beginning (signal fusion) and then the concatenated numerical channel is sent to network A to be trained. The text channel is also sent to network B and their output layers are fused using the cross-attention technique
+![Picture2](https://user-images.githubusercontent.com/98291003/212764936-2e3499b5-6798-4e0c-97aa-19c9e41d90f3.png)
 
  GROUP 3: Each numerical dataset separately passes through network A, and the text dataset entenetwork B, then their penultimate layers are concatenated.
 In this case, only the feature level of fusion is used.
+![Picture3](https://user-images.githubusercontent.com/98291003/212764962-0c1a5d2f-0b2a-4ef9-a303-f6995135dd72.png)
 
 GROUP 4: First, four numeric channels are trained separately by model A and the text channel is trained by model B. Then after training, the penultimate layer of numerical modalities is concatenated and finally, in the last step, we fuse the text layer and the concatenated layer via the cross-attention method.
+![Picture4](https://user-images.githubusercontent.com/98291003/212764981-e3acdb28-c075-495f-a3bf-cebed2bd3030.png)
+
 
