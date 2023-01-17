@@ -20,7 +20,7 @@ Finally, we discuss the impact of Covid19 crisis on this prediction and show tha
 affect the performance of models.
 
 There are four groups of model:
-1-Group1:The signal fusion is used for structured dataset. So, all numerical datasets are concatenated at the beginning, being prepared to enter network A
+1-Group1:The signal fusion is used for structured dataset. So, all numerical datasets are concatenated at the beginning, being prepared to enter network A
 to be trained. On the other hand, the text is trained using model B. Then feature fusion is utilized and the penultimate layer of different modalities is combined through the concatenation technique.
 
 ![Picture1](https://user-images.githubusercontent.com/98291003/212764180-f777dfcd-cf8b-40ef-bc9f-d4d789506f06.png)
