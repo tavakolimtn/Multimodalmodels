@@ -23,8 +23,7 @@ affect the performance of models.
 There are four groups of model:
 1-Group1:The signal fusion is used for structured dataset. So, all numerical datasets are concatenated at the beginning, being prepared to enter network A
 to be trained. On the other hand, the text is trained using model B. Then feature fusion is utilized and the penultimate layer of different modalities is combined through the concatenation technique.
-
-![Picture1](https://user-images.githubusercontent.com/98291003/212764180-f777dfcd-cf8b-40ef-bc9f-d4d789506f06.png=300x200)
+![Picture1](https://user-images.githubusercontent.com/98291003/212764180-f777dfcd-cf8b-40ef-bc9f-d4d789506f06.png)=300x200
 
 2-GROUP 2: Similar to GROUP 1 all numerical datasets are fused at the beginning (signal fusion) and then the concatenated numerical channel is sent to network A to be trained. The text channel is also sent to network B and their output layers are fused using the cross-attention technique
 ![Picture2](https://user-images.githubusercontent.com/98291003/212764936-2e3499b5-6798-4e0c-97aa-19c9e41d90f3.png)
