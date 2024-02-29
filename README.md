@@ -12,12 +12,13 @@ There are four groups of models:
 
 2-GROUP 2: Similar to GROUP 1 all numerical datasets are fused at the beginning (signal fusion) and then the concatenated numerical channel is sent to network A to be trained. The text channel is also sent to network B and their output layers are fused using the cross-attention technique
 
-Alt Text
+![Picture2](https://github.com/tavakolimtn/Multimodalmodels/assets/98291003/baf2cdea-434a-4419-846e-50c2e302aa11)
 
 GROUP 3: Each numerical dataset separately passes through network A, and the text dataset entenetwork B, then their penultimate layers are concatenated. In this case, only the feature level of fusion is used.
 
-Alt Text
+![Picture3 (1)](https://github.com/tavakolimtn/Multimodalmodels/assets/98291003/82793fd7-349a-4a5e-9308-c651d5360b15)
+
 
 GROUP 4: First, four numeric channels are trained separately by model A and the text channel is trained by model B. Then after training, the penultimate layer of numerical modalities is concatenated and finally, in the last step, we fuse the text layer and the concatenated layer via the cross-attention method.
 
-Alt Text
+![Picture4](https://github.com/tavakolimtn/Multimodalmodels/assets/98291003/f024e89a-a7dc-4fe4-aa08-44e07159b29d)
